@@ -1,0 +1,17 @@
+---
+  site_title: <% content.site_title %>
+  sections: <% content.sections %>
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= site_title %> </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <p>Test</p>
+  <% sections.forEach(function(section) { %>
+    <%- include(`./components/${section.type}`, {content: section}); %>
+  <% }) %>
+</body>
