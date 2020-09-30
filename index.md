@@ -8,5 +8,5 @@
     - type: callout 
       title: Callout title
       text: callout text
-      image: /images/placeholder.jpg
+      image: assets/images/placeholder.jpg
 ---

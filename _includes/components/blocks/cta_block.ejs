@@ -1,0 +1,11 @@
+<div class="cta-block">
+  <div class="cta-wrapper">
+    <a href="<%= content.cta_link %>" >
+      <%= content.cta_text %>
+    </a>
+
+    <% if (content.cta_fine_print) { %>
+      <small class="cta-fine-print"><%= content.cta_fine_print %></small>
+    <% } %>
+  </div>
+</div>
